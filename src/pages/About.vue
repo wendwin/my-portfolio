@@ -218,16 +218,99 @@
                         </defs>
                     </g>
                 </svg>
-
             </div>
 
-            
+            <h1 class="text-2xl font-bold mt-6 mb-4">My Product</h1>
+            <div class="p-4 mb-3 bg-gray-300 rounded-md flex justify-between items-center hover:cursor-pointer hover:bg-gray-400"
+                @click="toggleProduct">
+                <p class="font-medium text-slate-800">Cooling Fan | Orbitron</p>
+                <ion-icon v-if="!togleProduct" name="chevron-down-outline"></ion-icon>
+                <ion-icon v-else name="chevron-up-outline"></ion-icon>
+            </div>
+
+            <div v-if="togleProduct"
+                class="p-5 bg-white border border-1 border-gray-200 shadow-md rounded-md dark:shadow-none">
+                <div class="md:mx-0 md:pb-8 md:flex items-center gap-3">
+                    <div class="relative w-full max-h-[200px] md:max-w-[300px] flex flex-col">
+                        <img :src="images[currentIndex]"
+                            class="w-full max-h-[200px] md:h-auto aspect-square object-contain border rounded transition duration-500"
+                            alt="Product" />
+
+                        <!-- Tombol Prev -->
+                        <button @click="prev"
+                            class="absolute -left-3 top-1/2 -translate-y-1/2 bg-white rounded-full w-9 h-9 flex items-center justify-center shadow hover:bg-gray-300">
+                            <ion-icon name="caret-back-outline"></ion-icon>
+                        </button>
+
+                        <!-- Tombol Next -->
+                        <button @click="next"
+                            class="absolute -right-3 top-1/2 -translate-y-1/2 bg-white rounded-full w-9 h-9 flex items-center justify-center shadow hover:bg-gray-300">
+                            <ion-icon name="caret-forward-outline"></ion-icon>
+                        </button>
+                        <!-- Navigasi Bulat -->
+                        <div class="flex justify-center mt-6 gap-2">
+                            <span v-for="(img, index) in images" :key="index" @click="goTo(index)" :class="[
+                                'h-3 w-3 rounded-full cursor-pointer',
+                                currentIndex === index ? 'bg-[#01AFAF]' : 'bg-gray-300'
+                            ]"></span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center mt-20 md:mt-0 text-center w-full">
+                        <img :src="orbitron" alt="" class="max-w-[150px] mb-2" />
+                        <h3 class="text-sm text-slate-800 font-mina mb-4">Cool Beyond Limits</h3>
+
+                        <p class="text-sm text-slate-700">Soon Available on Tokopedia & Shopee</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
-<script setup> </script>
 
-<style lang="scss" scoped>
+<script setup>
+import { ref } from 'vue';
+import product1 from '@/assets/img/product1.png'
+import product2 from '@/assets/img/product2.png'
+import product3 from '@/assets/img/product3.png'
+import product4 from '@/assets/img/product4.png'
+import orbitron from '@/assets/img/orbitron.svg'
 
+const togleProduct = ref(false);
+
+function toggleProduct() {
+    togleProduct.value = !togleProduct.value;
+}
+
+const images = [
+    product4,
+    product1,
+    product2,
+    product3
+]
+
+const currentIndex = ref(0)
+
+const next = () => {
+    currentIndex.value = (currentIndex.value + 1) % images.length
+}
+
+const prev = () => {
+    currentIndex.value =
+        (currentIndex.value - 1 + images.length) % images.length
+}
+
+const goTo = (index) => {
+    currentIndex.value = index
+}
+
+</script>
+
+<style scoped>
+ion-icon {
+    color: #202020;
+    font-size: 20px;
+}
 </style>
