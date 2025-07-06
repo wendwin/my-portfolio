@@ -280,10 +280,10 @@ function toggleProduct() {
 }
 
 const images = [
-  '/img/product44.png',
-  '/img/product11.png',
-  '/img/product12.png',
-  '/img/product13.png'
+  '/img/product44.webp',
+  '/img/product11.webp',
+  '/img/product12.webp',
+  '/img/product13.webp'
 ]
 
 const orbitron = '/img/orbitron.svg'
