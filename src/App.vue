@@ -9,7 +9,7 @@
   </div>  
 </template> -->
 <template>
-  <div class="mx-auto py-6 text-gray-100 bg-white dark:bg-slate-800 min-h-screen">
+  <div class="mx-auto py-6 text-gray-100 bg-white dark:bg-[#0F172A] min-h-screen">
     <nav class="mx-auto text-center flex flex-wrap justify-center items-center gap-3 font-inter">
       <router-link to="/about"
         class="p-2 px-5 font-medium text-base rounded-md text-slate-800 dark:text-white hover:scale-105 transition ease-in duration-100">About</router-link>
