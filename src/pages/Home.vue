@@ -1,7 +1,7 @@
 <template>
     <div class="p-4 my-4 text-center max-w-3xl mx-auto">
         <div class="w-36 h-36 rounded-full overflow-hidden mx-auto">
-            <img :src="profile" alt="profile" class="w-full h-full object-cover object-top" />
+            <img src="/img/profile.png" alt="profile" class="w-full h-full object-cover object-top" />
         </div>
         <div class="my-4 font-montserrat">
             <div class="title my-4">
@@ -40,7 +40,6 @@
 
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import profile from '@/assets/img/profile.png'
 </script>
 
 <style lang="scss" scoped></style>

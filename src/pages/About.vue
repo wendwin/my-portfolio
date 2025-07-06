@@ -272,11 +272,6 @@
 
 <script setup>
 import { ref } from 'vue';
-import product1 from '@/assets/img/product1.png'
-import product2 from '@/assets/img/product2.png'
-import product3 from '@/assets/img/product3.png'
-import product4 from '@/assets/img/product4.png'
-import orbitron from '@/assets/img/orbitron.svg'
 
 const togleProduct = ref(false);
 
@@ -285,11 +280,13 @@ function toggleProduct() {
 }
 
 const images = [
-    product4,
-    product1,
-    product2,
-    product3
+  '/img/product44.png',
+  '/img/product11.png',
+  '/img/product12.png',
+  '/img/product13.png'
 ]
+
+const orbitron = '/img/orbitron.svg'
 
 const currentIndex = ref(0)
 
