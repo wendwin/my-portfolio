@@ -1,7 +1,7 @@
 <template>
     <div class="p-4 my-4 text-center max-w-3xl mx-auto">
-        <div class="w-36 h-36 rounded-full overflow-hidden mx-auto">
-            <img src="/img/profile.png" alt="profile" class="w-full h-full object-cover object-top" />
+        <div class="w-36 h-36 rounded-full overflow-hidden mx-auto  border-2 border-slate-300 dark:border-none">
+            <img src="/img/110462797.png" alt="profile" class="w-full h-full object-cover object-top " />
         </div>
         <div class="my-4 font-montserrat">
             <div class="title my-4">
