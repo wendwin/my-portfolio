@@ -144,7 +144,7 @@
                             Open to fun ideas, side projects, or anything creative. Hit me up!
                         </p>
 
-                        <a href="#"
+                        <a :href="whatsappUrl" target="_blank"
                             class="mt-8 inline-block rounded-full  bg-transparent border-2 border-[#01AFAF] px-12 py-3 text-sm font-medium bg-gradient-to-r from-[#02AEB0] to-[#00C9AC] bg-clip-text text-transparent hover:bg-[#01AFAF]  hover:bg-clip-border hover:text-white transition focus:ring-3 focus:outline-hidden">
                             Get Started
                         </a>
@@ -164,7 +164,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" target="_blank" class="text-gray-700 transition hover:opacity-75 text-xl">
+                                <a href="#" target="_blank" class="text-gray-700 transition hover:opacity-75 text-xl">
                                     <font-awesome-icon :icon="['fab', 'discord']"
                                         class="hover:text-[#02AEB0] hover:scale-125 transition ease-in duration-100 " />
                                 </a>
@@ -178,7 +178,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" target="_blank" class="text-gray-700 transition hover:opacity-75 text-xl">
+                                <a href="https://www.linkedin.com/in/faisal-dwi-nurwenda-87a625373" target="_blank" class="text-gray-700 transition hover:opacity-75 text-xl">
                                     <font-awesome-icon :icon="['fab', 'linkedin-in']"
                                         class="hover:text-[#02AEB0] hover:scale-125 transition ease-in duration-100 " />
                                 </a>
@@ -198,10 +198,10 @@
             </footer>
 
 
-            <div v-show="showScrollTop" @click="scrollToTop"
+            <!-- <div v-show="showScrollTop" @click="scrollToTop"
                 class="fixed w-fit bottom-6 right-20 z-50 bg-[#01AFAF] text-white p-2 rounded-full shadow-lg hover:bg-[#018787] transition duration-300 cursor-pointer flex items-center justify-center">
                 <ion-icon name="caret-up-outline"></ion-icon>
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -214,8 +214,8 @@ const projects = [
     {
         title: "Jayamart",
         job: 'Fullstack',
-        subTitle: "Sistem Pemesanan Koperasi Jayamart untuk Dosen dan Tendik. ",
-        description: "Tugas PJBL Pengembangan Web Lanjut, Sistem ini dirancang untuk mempermudah pengguna dalam melakukan pembelian wajib bulanan di koperasi Jayamart.",
+        subTitle: "Sistem Pemesanan Koperasi Jayamart",
+        description: "Project Based Learning, Sistem ini dirancang untuk mempermudah anggota dalam melakukan pembelian wajib bulanan di koperasi Jayamart.",
         tags: ["Flask", "Bootstrap", "Alpinejs", "MongoDB", "Rest API"],
         image: [
             '/img/jayamart/5.webp',
@@ -226,9 +226,9 @@ const projects = [
     },
     {
         title: "POS App",
-        subTitle: "Aplikasi Point of Sale (POS) untuk UMKM",
+        subTitle: "Aplikasi Point of Sale (POS)",
         job: 'Fullstack',
-        description: "Membangun sistem Point of Sale (POS) berbasis web/mobile yang dirancang untuk membantu pelaku usaha kecil dan menengah (UMKM) dalam mengelola transaksi penjualan, stok barang, dan laporan keuangan secara efisien. Aplikasi ini memungkinkan kasir untuk melakukan pencatatan penjualan secara real-time, sekaligus menyediakan fitur manajemen produk.",
+        description: "Membangun sistem Point of Sale (POS) berbasis web yang dirancang untuk membantu UMKM dalam mengelola transaksi penjualan, stok barang dan manajemen produk.",
         tags: ["Django", "Django Rest Framework",  "Bootstrap", "Alpinejs", "MySQL"],
         image: [
             '/img/pos/14.webp',
@@ -239,8 +239,8 @@ const projects = [
     {
         title: "Emojiku",
         job: 'Fullstack',
-        subTitle: "Aplikasi Pengenalan Emosi untuk Anak SLB Bangun Putra, Kasihan, Bantul, DIY ",
-        description: "Mengembangkan aplikasi edukatif bernama Emojiku yang ditujukan untuk membantu anak-anak berkebutuhan khusus (SLB) dalam mengenali dan memahami berbagai jenis emosi melalui vidio dan game. Proyek ini dijalankan dengan perangkat Raspberry Pi 4 sebagai media utama, dikombinasikan dengan layar touchscreen dan speaker, sehingga dapat digunakan secara mandiri oleh anak di ruang belajar.",
+        subTitle: "Aplikasi Pengenalan Emosi untuk Anak SLB Bangun Putra, Kasihan, Bantul, Yogyakarta",
+        description: "Mengembangkan aplikasi edukatif bernama Emojiku yang ditujukan untuk membantu anak-anak berkebutuhan khusus (SLB) dalam mengenali dan memahami berbagai jenis emosi melalui vidio dan game. Proyek ini dijalankan dengan perangkat Raspberry Pi 4 sebagai media utama, dikombinasikan dengan layar touchscreen dan speaker.",
         tags: ["Flask (ORM)", "Bootstrap", "SQLite"],
         image: [
             '/img/emojiku/16.webp',
@@ -253,7 +253,7 @@ const projects = [
         title: "Prediction Mental Health",
         subTitle: "Sistem Klasifikasi Tingkat Stres Berbasis Web",
         job: 'Fullstack',
-        tags: ["Flask", "ScikitLearn", "Bootstrap", "Mysql", "Voice Recognition"],
+        tags: ["Flask", "ScikitLearn", "Bootstrap", "Mysql" ],
         description: "Membangun sistem berbasis web yang mampu melakukan prediksi tingkat stres seseorang dengan menerapkan algoritma Logistic Regression sebagai model klasifikasi. Sistem ini dirancang untuk menerima input berupa data kuisioner atau atribut pribadi, kemudian mengklasifikasikan tingkat stres (misalnya: rendah, sedang, tinggi) secara otomatis.",
         image: [
             '/img/mensafe/42.webp',
@@ -266,11 +266,11 @@ const projects = [
         title: "NutriFood",
         subTitle: "Search Engine untuk Pencarian Informasi Gizi Makanan",
         job: 'Backend',
-        tags: ["Flask", "Selenium", "Rest API", "Vuejs", "Google Colab"],
-        description: "Mengembangkan sistem search engine aplikasi NutriFood yang berfungsi membantu pengguna mencari informasi terkait makanan dan kandungan gizi. Sistem ini dibangun sebagai bagian dari tugas Data Mining 2, dengan menerapkan teknik pemrosesan teks dan pengukuran kemiripan dokumen. Model pencarian menggunakan pendekatan Cosine Similarity dan BM25 (Best Matching 25) untuk mengukur relevansi antara query pengguna dan dokumen dalam basis data.",
+        tags: ["Flask", "Selenium", "Rest API", "Vuejs", "Tailwind CSS"],
+        description: "Mengembangkan sistem search engine aplikasi NutriFood yang berfungsi membantu pengguna mencari informasi terkait makanan dan kandungan gizi. Sistem ini dibangun sebagai bagian dari tugas Data Mining 2, dengan menerapkan teknik pemrosesan teks dan pengukuran kemiripan dokumen. Model pencarian menggunakan pendekatan Cosine Similarity dan BM25 untuk mengukur relevansi antara query pengguna dan dokumen dalam basis data.",
         image: [
-            '/img/nutrifood/46.webp',
             '/img/nutrifood/45.webp',
+            '/img/nutrifood/46.webp',
         ],
         status: 'Progres',
     },
@@ -279,7 +279,7 @@ const projects = [
         subTitle: "Sistem Pemesanan Online Jeep Wisata Merapi, Kaliurang, Yogyakarta",
         job: 'Backend',
         tags: ["Laravel", "MySQL", "Midtrans", "Rest API", "Postman"],
-        description: "Mengembangkan sistem pemesanan online untuk layanan jeep wisata di kawasan Tlogo Putri, Merapi. Sistem ini memudahkan wisatawan dalam melakukan pemesanan jeep secara online, memilih jadwal perjalanan, serta melakukan pembayaran secara langsung melalui sistem",
+        description: "Mengembangkan sistem pemesanan online dan pembayaran untuk layanan jeep wisata di kawasan Tlogo Putri, Merapi dengan menerapkan payment gataway (Midtrans) dan mengintegrasikan di sisi frontend.",
         image: [
             '/img/tlogo/22.webp',
             '/img/tlogo/23.webp',
@@ -292,8 +292,8 @@ const projects = [
         title: "Stiamu",
         subTitle: "Dashboard Analisis Sentimen 24 Rumah Sakit di Yogyakarta",
         job: 'Fullstack',
-        tags: ["Flask", "Vuejs", "MySQL", "Tailwind Css", "Plotly", "SerpApi"],
-        description: "Dashboard untuk menampilkan hasil analisis sentimen dari ulasan Google Maps terhadap 24 rumah sakit di Daerah Istmewa Yogyakarta. Proyek ini bertujuan memberikan gambaran umum mengenai persepsi masyarakat terhadap kualitas pelayanan rumah sakit dan membantu pemilik rumah sakit dalam meningkatkan kualitas pelayanan mereka melaui insight hasil analisis.",
+        tags: ["Flask", "Vuejs", "MySQL", "Tailwind CSS", "Plotly", "SerpApi"],
+        description: "Dashboard untuk menampilkan hasil analisis sentimen dari scraping ulasan Google Maps terhadap 24 rumah sakit di Yogyakarta. Proyek ini bertujuan memberikan gambaran mengenai persepsi masyarakat terhadap kualitas pelayanan rumah sakit dan membantu rumah sakit dalam meningkatkan kualitas pelayanan melaui insight hasil analisis.",
         image: [
             '/img/stiamu/31.webp',
             '/img/stiamu/32.webp',
@@ -320,8 +320,8 @@ const projects = [
         title: "Pustaka Pemda ",
         subTitle: "Website Company Profile",
         job: 'Frontend',
-        tags: ["Laravel", "Tailwind Css", "Alpinejs", "MySQL"],
-        description: "Membangun website company profile untuk CSC Group khusus dibidang Bimtek.",
+        tags: ["Laravel", "Tailwind CSS", "Alpinejs", "MySQL"],
+        description: "Membangun website company profile untuk CSC Group khusus dibidang Bimtek dan membuat portal berita.",
         image: [
             '/img/pustaka/36.webp',
             '/img/pustaka/37.webp',
@@ -334,7 +334,7 @@ const projects = [
     //     title: "Pusat Sertifikasi Profesi Indonesia",
     //     subTitle: "Website Company Profile",
     //     job: 'Frontend',
-    //     tags: [ "Laravel", "Tailwind Css", "Alpinejs", "MySQL"],
+    //     tags: [ "Laravel", "Tailwind CSS", "Alpinejs", "MySQL"],
     //     description: "Membangun website company profile untuk CSC Group dibidang Sertifikasi.",
     //     image: [
     //         '/img/product44.webp',
@@ -347,8 +347,8 @@ const projects = [
         title: "Inspensi Mobil Jogja",
         subTitle: "Website Company Profile",
         job: 'Frontend',
-        tags: ["Nextjs"],
-        description: "Mengembangkan website company profile untuk inspeksi mobil Jogja, layanan profesional di bidang inspeksi kendaraan bekas di wilayah Yogyakarta. Website ini juga dilengkapi fitur pemesanan jasa inspeksi mobil secara online untuk memudahkan calon pelanggan",
+        tags: ["Nextjs", "Tailwind CSS",],
+        description: "Mengembangkan website company profile dan pemesanan untuk inspeksi mobil Jogja, layanan profesional di bidang inspeksi kendaraan bekas di wilayah Yogyakarta.",
         image: [
             '/img/inspeksi/26.webp',
             '/img/inspeksi/27.webp',
@@ -421,6 +421,9 @@ onMounted(() => {
 onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
 })
+
+const whatsappUrl = `https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}?text=Halo%20saya%20tertarik%20dengan%20portofolio%20Anda`;
+
 </script>
 
 <style scoped>
