@@ -218,9 +218,9 @@ const projects = [
         description: "Tugas PJBL Pengembangan Web Lanjut, Sistem ini dirancang untuk mempermudah pengguna dalam melakukan pembelian wajib bulanan di koperasi Jayamart.",
         tags: ["Flask", "Bootstrap", "Alpinejs", "MongoDB", "Rest API"],
         image: [
-            '/img/jayamart/5.png',
-            '/img/jayamart/3.png',
-            '/img/jayamart/2.png',
+            '/img/jayamart/5.webp',
+            '/img/jayamart/3.webp',
+            '/img/jayamart/2.webp',
         ],
         status: 'Selesai',
     },
@@ -231,8 +231,8 @@ const projects = [
         description: "Membangun sistem Point of Sale (POS) berbasis web/mobile yang dirancang untuk membantu pelaku usaha kecil dan menengah (UMKM) dalam mengelola transaksi penjualan, stok barang, dan laporan keuangan secara efisien. Aplikasi ini memungkinkan kasir untuk melakukan pencatatan penjualan secara real-time, sekaligus menyediakan fitur manajemen produk.",
         tags: ["Django", "Django Rest Framework",  "Bootstrap", "Alpinejs", "MySQL"],
         image: [
-            '/img/pos/14.png',
-            '/img/pos/15.png',
+            '/img/pos/14.webp',
+            '/img/pos/15.webp',
         ],
         status: 'Progres',
     },
@@ -243,9 +243,9 @@ const projects = [
         description: "Mengembangkan aplikasi edukatif bernama Emojiku yang ditujukan untuk membantu anak-anak berkebutuhan khusus (SLB) dalam mengenali dan memahami berbagai jenis emosi melalui vidio dan game. Proyek ini dijalankan dengan perangkat Raspberry Pi 4 sebagai media utama, dikombinasikan dengan layar touchscreen dan speaker, sehingga dapat digunakan secara mandiri oleh anak di ruang belajar.",
         tags: ["Flask (ORM)", "Bootstrap", "SQLite"],
         image: [
-            '/img/emojiku/16.png',
-            '/img/emojiku/17.png',
-            '/img/emojiku/18.png',
+            '/img/emojiku/16.webp',
+            '/img/emojiku/17.webp',
+            '/img/emojiku/18.webp',
         ],
         status: 'Selesai',
     },
@@ -256,8 +256,8 @@ const projects = [
         tags: ["Flask", "ScikitLearn", "Bootstrap", "Mysql", "Voice Recognition"],
         description: "Membangun sistem berbasis web yang mampu melakukan prediksi tingkat stres seseorang dengan menerapkan algoritma Logistic Regression sebagai model klasifikasi. Sistem ini dirancang untuk menerima input berupa data kuisioner atau atribut pribadi, kemudian mengklasifikasikan tingkat stres (misalnya: rendah, sedang, tinggi) secara otomatis.",
         image: [
-            '/img/mensafe/42.png',
-            '/img/mensafe/41.png',
+            '/img/mensafe/42.webp',
+            '/img/mensafe/41.webp',
         ],
         status: 'Selesai',
     },
@@ -269,8 +269,8 @@ const projects = [
         tags: ["Flask", "Selenium", "Rest API", "Vuejs", "Google Colab"],
         description: "Mengembangkan sistem search engine aplikasi NutriFood yang berfungsi membantu pengguna mencari informasi terkait makanan dan kandungan gizi. Sistem ini dibangun sebagai bagian dari tugas Data Mining 2, dengan menerapkan teknik pemrosesan teks dan pengukuran kemiripan dokumen. Model pencarian menggunakan pendekatan Cosine Similarity dan BM25 (Best Matching 25) untuk mengukur relevansi antara query pengguna dan dokumen dalam basis data.",
         image: [
-            '/img/nutrifood/46.png',
-            '/img/nutrifood/45.png',
+            '/img/nutrifood/46.webp',
+            '/img/nutrifood/45.webp',
         ],
         status: 'Progres',
     },
@@ -281,10 +281,10 @@ const projects = [
         tags: ["Laravel", "MySQL", "Midtrans", "Rest API", "Postman"],
         description: "Mengembangkan sistem pemesanan online untuk layanan jeep wisata di kawasan Tlogo Putri, Merapi. Sistem ini memudahkan wisatawan dalam melakukan pemesanan jeep secara online, memilih jadwal perjalanan, serta melakukan pembayaran secara langsung melalui sistem",
         image: [
-            '/img/tlogo/22.png',
-            '/img/tlogo/23.png',
-            '/img/tlogo/24.png',
-            '/img/tlogo/25.png'
+            '/img/tlogo/22.webp',
+            '/img/tlogo/23.webp',
+            '/img/tlogo/24.webp',
+            '/img/tlogo/25.webp'
         ],
         status: 'Selesai',
     },
@@ -295,11 +295,11 @@ const projects = [
         tags: ["Flask", "Vuejs", "MySQL", "Tailwind Css", "Plotly", "SerpApi"],
         description: "Dashboard untuk menampilkan hasil analisis sentimen dari ulasan Google Maps terhadap 24 rumah sakit di Daerah Istmewa Yogyakarta. Proyek ini bertujuan memberikan gambaran umum mengenai persepsi masyarakat terhadap kualitas pelayanan rumah sakit dan membantu pemilik rumah sakit dalam meningkatkan kualitas pelayanan mereka melaui insight hasil analisis.",
         image: [
-            '/img/stiamu/31.png',
-            '/img/stiamu/32.png',
-            '/img/stiamu/33.png',
-            '/img/stiamu/34.png',
-            '/img/stiamu/35.png'
+            '/img/stiamu/31.webp',
+            '/img/stiamu/32.webp',
+            '/img/stiamu/33.webp',
+            '/img/stiamu/34.webp',
+            '/img/stiamu/35.webp'
         ],
         status: 'Progres',
     },
@@ -310,9 +310,9 @@ const projects = [
         tags: ["Laravel", "Bootstrap", "Alpinejs", "MySQL"],
         description: "Membangun website company profile untuk CSC Group dibidang Bimtek, event organizer, jasa konstruksi dan ketahanan pangan.",
         image: [
-            '/img/csc/19.png',
-            '/img/csc/20.png',
-            '/img/csc/21.png',
+            '/img/csc/19.webp',
+            '/img/csc/20.webp',
+            '/img/csc/21.webp',
         ],
         status: 'Selesai',
     },
@@ -323,10 +323,10 @@ const projects = [
         tags: ["Laravel", "Tailwind Css", "Alpinejs", "MySQL"],
         description: "Membangun website company profile untuk CSC Group khusus dibidang Bimtek.",
         image: [
-            '/img/pustaka/36.png',
-            '/img/pustaka/37.png',
-            '/img/pustaka/38.png',
-            '/img/pustaka/39.png'
+            '/img/pustaka/36.webp',
+            '/img/pustaka/37.webp',
+            '/img/pustaka/38.webp',
+            '/img/pustaka/39.webp'
         ],
         status: 'Progres',
     },
@@ -350,10 +350,10 @@ const projects = [
         tags: ["Nextjs"],
         description: "Mengembangkan website company profile untuk inspeksi mobil Jogja, layanan profesional di bidang inspeksi kendaraan bekas di wilayah Yogyakarta. Website ini juga dilengkapi fitur pemesanan jasa inspeksi mobil secara online untuk memudahkan calon pelanggan",
         image: [
-            '/img/inspeksi/26.png',
-            '/img/inspeksi/27.png',
-            '/img/inspeksi/28.png',
-            '/img/inspeksi/29.png'
+            '/img/inspeksi/26.webp',
+            '/img/inspeksi/27.webp',
+            '/img/inspeksi/28.webp',
+            '/img/inspeksi/29.webp'
         ],
         status: 'Progres',
     },
