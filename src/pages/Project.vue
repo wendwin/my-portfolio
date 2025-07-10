@@ -144,7 +144,7 @@
                             Open to fun ideas, side projects, or anything creative. Hit me up!
                         </p>
 
-                        <a href="#"
+                        <a :href="whatsappUrl" target="_blank"
                             class="mt-8 inline-block rounded-full  bg-transparent border-2 border-[#01AFAF] px-12 py-3 text-sm font-medium bg-gradient-to-r from-[#02AEB0] to-[#00C9AC] bg-clip-text text-transparent hover:bg-[#01AFAF]  hover:bg-clip-border hover:text-white transition focus:ring-3 focus:outline-hidden">
                             Get Started
                         </a>
@@ -164,7 +164,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" target="_blank" class="text-gray-700 transition hover:opacity-75 text-xl">
+                                <a href="#" target="_blank" class="text-gray-700 transition hover:opacity-75 text-xl">
                                     <font-awesome-icon :icon="['fab', 'discord']"
                                         class="hover:text-[#02AEB0] hover:scale-125 transition ease-in duration-100 " />
                                 </a>
@@ -178,7 +178,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" target="_blank" class="text-gray-700 transition hover:opacity-75 text-xl">
+                                <a href="https://www.linkedin.com/in/faisal-dwi-nurwenda-87a625373" target="_blank" class="text-gray-700 transition hover:opacity-75 text-xl">
                                     <font-awesome-icon :icon="['fab', 'linkedin-in']"
                                         class="hover:text-[#02AEB0] hover:scale-125 transition ease-in duration-100 " />
                                 </a>
@@ -421,6 +421,9 @@ onMounted(() => {
 onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
 })
+
+const whatsappUrl = `https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}?text=Halo%20saya%20tertarik%20dengan%20portofolio%20Anda`;
+
 </script>
 
 <style scoped>
