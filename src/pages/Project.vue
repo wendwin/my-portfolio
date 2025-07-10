@@ -198,10 +198,10 @@
             </footer>
 
 
-            <div v-show="showScrollTop" @click="scrollToTop"
+            <!-- <div v-show="showScrollTop" @click="scrollToTop"
                 class="fixed w-fit bottom-6 right-20 z-50 bg-[#01AFAF] text-white p-2 rounded-full shadow-lg hover:bg-[#018787] transition duration-300 cursor-pointer flex items-center justify-center">
                 <ion-icon name="caret-up-outline"></ion-icon>
-            </div>
+            </div> -->
 
         </div>
     </div>
