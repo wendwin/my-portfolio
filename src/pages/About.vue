@@ -3,32 +3,23 @@
         <div class="text-justify text-slate-800 dark:text-white">
             <h1 class="text-2xl font-bold mb-4 ">About Me</h1>
             <p class="mb-2  dark:text-slate-400">
-                Hi!, I am an Information Systems student focusing on web development as a Fullstack Developer. I am used
-                to using Vue.js, Nuxt.js, Tailwind CSS and Bootstrap to build responsive and intuitive user interfaces.
-                For the backend, I use Django, Flask, and Laravel in building reliable and structured systems.
+                Hai!, Saya adalah seorang mahasiswa Sistem Informasi yang memiliki ketertarikan dan fokus pada pengembangan web sebagai Fullstack Developer. Saya terbiasa menggunakan Vue.js, Tailwind CSS, dan Bootstrap untuk membangun antarmuka pengguna yang responsif dan intuitif. Untuk backend, saya menggunakan Django, Flask, dan Laravel untuk membangun sistem yang handal dan terstruktur.
             </p>
             <p class=" dark:text-slate-400">
-                Besides focusing on web application development, I also actively study and implement Machine Learning to
-                support intelligent features in applications. Integrating machine learning models into the web using
-                Python (via Flask or Django) for various needs such as data analysis, classification, prediction, and
-                automation.
+                Selain fokus pada pengembangan aplikasi web, saya juga mempelajari dan mengimplementasikan Machine Learning untuk mendukung fitur-fitur cerdas dalam aplikasi. Mengintegrasikan model machine learning ke dalam web menggunakan Python (melalui Flask atau Django) untuk berbagai kebutuhan seperti analisis data, klasifikasi, prediksi, dan otomatisasi.
             </p>
             <h1 class="text-2xl font-bold mt-6 mb-4">Work</h1>
             <p class="mb-2  dark:text-slate-400">
-                Currently, I am also developing a project with a team called <a
+                Saat ini, saya juga sedang mengembangkan proyek dengan tim bernama  <a
                     href="https://id.linkedin.com/company/codelensid" target="_blank"
-                    class="text-[#02AEB0] font-medium">CodeLens.id</a>, which focuses on digital solutions and software
-                development.</p>
+                    class="text-[#02AEB0] font-medium">CodeLens.id</a>, yang berfokus pada solusi digital dan pengembangan perangkat lunak.</p>
             <p class="mb-2  dark:text-slate-400">
-                As an aspiring software engineer I've worked all over the stack, doing something almost completely
-                different with
-                each job/team change.
+                Sebagai calon software engineer, saya pernah mengerjakan berbagai bagian dalam pengembangan aplikasi, dengan pengalaman yang cukup beragam di setiap tim atau proyek.
             </p>
             <p class=" dark:text-slate-400">
-                You can check out my <a href="#" class="underline">LinkedIn</a> if you're interested in my career
-                history.
+                Kamu bisa lihat profil <a href="https://www.linkedin.com/in/faisal-dwi-nurwenda-87a625373" target="_blank" class="underline">LinkedIn</a> kalau tertarik dengan perjalanan karier saya.
             </p>
-            <h1 class="text-2xl font-bold mt-6 mb-4">Language Stack</h1>
+            <h1 class="text-2xl font-bold mt-6 mb-4">Core Languages</h1>
             <div class="flex flex-wrap justify-center items-center gap-5 mb-8">
                 <!-- python -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
@@ -233,7 +224,7 @@
                 <div class="md:mx-0 md:pb-8 md:flex items-center gap-3">
                     <div class="relative w-full max-h-[200px] md:max-w-[300px] flex flex-col">
                         <img :src="images[currentIndex]"
-                            class="w-full max-h-[200px] md:h-auto aspect-square object-contain border rounded transition duration-500"
+                            class="w-full max-h-[200px] md:h-auto aspect-square object-contain rounded transition duration-500"
                             alt="Product" />
 
                         <!-- Tombol Prev -->
@@ -280,10 +271,10 @@ function toggleProduct() {
 }
 
 const images = [
-  '/img/product44.webp',
-  '/img/product11.webp',
-  '/img/product12.webp',
-  '/img/product13.webp'
+    '/img/product/1.webp',
+    '/img/product/2.webp',
+    '/img/product/3.webp',
+    '/img/product/4.webp'
 ]
 
 const orbitron = '/img/orbitron.svg'
