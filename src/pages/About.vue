@@ -3,21 +3,32 @@
         <div class="text-justify text-slate-800 dark:text-white">
             <h1 class="text-2xl font-bold mb-4 ">About Me</h1>
             <p class="mb-2  dark:text-slate-400">
-                Hai!, Saya adalah seorang mahasiswa Sistem Informasi yang memiliki ketertarikan dan fokus pada pengembangan web sebagai Fullstack Developer. Saya terbiasa menggunakan Vue.js, Tailwind CSS, dan Bootstrap untuk membangun antarmuka pengguna yang responsif dan intuitif. Untuk backend, saya menggunakan Django, Flask, dan Laravel untuk membangun sistem yang handal dan terstruktur.
+                Hi! I'm an Information Systems student focusing on web development as a Fullstack Developer. I am
+                experienced in using Vue.js, Tailwind CSS, and Bootstrap to build responsive and intuitive user
+                interfaces. For the backend, I use Django, Flask, and Laravel to develop reliable and well structured
+                systems.
             </p>
             <p class=" dark:text-slate-400">
-                Selain fokus pada pengembangan aplikasi web, saya juga mempelajari dan mengimplementasikan Machine Learning untuk mendukung fitur-fitur cerdas dalam aplikasi. Mengintegrasikan model machine learning ke dalam web menggunakan Python (melalui Flask atau Django) untuk berbagai kebutuhan seperti analisis data, klasifikasi, prediksi, dan otomatisasi.
+                Besides focusing on web application development, I also actively study and implement Machine Learning to
+                support intelligent features in applications. I integrate machine learning models into the web using
+                Python (via Flask or Django) for various purposes such as data analysis, classification, prediction, and
+                automation.
             </p>
             <h1 class="text-2xl font-bold mt-6 mb-4">Work</h1>
             <p class="mb-2  dark:text-slate-400">
-                Saat ini, saya juga sedang mengembangkan proyek dengan tim bernama  <a
+                I'm currently working on a project with a team called <a
                     href="https://id.linkedin.com/company/codelensid" target="_blank"
-                    class="text-[#02AEB0] font-medium">CodeLens.id</a>, yang berfokus pada solusi digital dan pengembangan perangkat lunak.</p>
+                    class="text-[#02AEB0] font-medium">CodeLens.id</a>, which focuses on providing digital solutions and
+                software development.
+            </p>
             <p class="mb-2  dark:text-slate-400">
-                Sebagai calon software engineer, saya pernah mengerjakan berbagai bagian dalam pengembangan aplikasi, dengan pengalaman yang cukup beragam di setiap tim atau proyek.
+                As an aspiring software engineer I've worked all over the stack, doing something almost completely
+                different with each job/team change.
             </p>
             <p class=" dark:text-slate-400">
-                Kamu bisa lihat profil <a href="https://www.linkedin.com/in/faisal-dwi-nurwenda-87a625373" target="_blank" class="underline">LinkedIn</a> kalau tertarik dengan perjalanan karier saya.
+                You can check out my
+                <a href="https://www.linkedin.com/in/faisal-dwi-nurwenda-87a625373" target="_blank"
+                    class="underline">LinkedIn</a> if you're interested in my career history.
             </p>
             <h1 class="text-2xl font-bold mt-6 mb-4">Core Languages</h1>
             <div class="flex flex-wrap justify-center items-center gap-5 mb-8">
