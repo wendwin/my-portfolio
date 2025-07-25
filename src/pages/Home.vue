@@ -47,7 +47,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 <style scoped>
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-  color: #fff;
+  /* color: #fff; */
   /* font-family: monospace; */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #02AEB0; /* The typwriter cursor */
