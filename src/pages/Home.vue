@@ -8,7 +8,9 @@
                 <h5 class="text-sm font-semibold text-slate-500 mb-2"> &commat;faisal.d.n</h5>
                 <h5 class="text-sm font-semibold text-slate-500"><font-awesome-icon :icon="['fas', 'location-dot']" class="text-slate-500" /> Yogyakarta, ID</h5>
                 <h1 class="text-2xl font-semibold text-slate-800 dark:text-white mt-6 md:text-4xl mb-2">Hi, my name is <span class="bg-gradient-to-r from-[#02AEB0] to-[#00C9AC] bg-clip-text text-transparent">Faisal DN</span></h1>
-                <h1 class="text-2xl font-semibold  md:text-4xl text-slate-800 dark:text-white">I'm Fullstack Web Developer</h1>
+                <div class="max-w-[34rem] mx-auto typewriter">
+                    <h1 class="text-2xl font-semibold  md:text-4xl text-slate-800 dark:text-white" >I'm Fullstack Web Developer</h1>
+                </div>
             </div>
             <div class="my-10 flex flex-wrap justify-center items-center gap-10 text-2xl text-slate-500 ">
                 <a href="https://www.instagram.com/faisal.d.n" target="_blank">
@@ -42,4 +44,30 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  /* font-family: monospace; */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #02AEB0; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  
+  animation: 
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #02AEB0 }
+}
+</style>

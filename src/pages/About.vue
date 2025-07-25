@@ -1,5 +1,5 @@
 <template>
-    <div class="p-4 mt-6 max-w-2xl mx-auto">
+    <div class="p-4 mt-6 max-w-2xl mx-auto" data-aos="fade-zoom-in" data-aos-duration="800" >
         <div class="text-justify text-slate-800 dark:text-white">
             <h1 class="text-2xl font-bold mb-4 ">About Me</h1>
             <p class="mb-2  dark:text-slate-400">

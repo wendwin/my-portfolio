@@ -2,6 +2,8 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import router from './router'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -21,5 +23,5 @@ library.add(
   faLinkedinIn,
   faEnvelope
 )
-
+AOS.init()
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

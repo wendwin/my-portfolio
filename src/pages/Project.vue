@@ -5,7 +5,7 @@
 
             <div class="my-6 max-w-4xl mx-auto">
                 <div v-for="(project, index) in projects" :key="index"
-                    class="md:flex justify-between items-stretch gap-4 mb-10 md:mb-8">
+                    class="md:flex justify-between items-stretch gap-4 mb-10 md:mb-8" data-aos="fade-up">
 
                     <div
                         class="w-full md:max-w-xl p-4 md:p-5 rounded-md bg-white border border-slate-300 shadow-md flex flex-col mb-4 md:mb-0 dark:bg-gray-800 dark:border-gray-800 hover:dark:border-[#01AFAF]">
