@@ -658,6 +658,7 @@
 
 <script setup>
 import { ref } from "vue";
+import orbitron from "@/assets/img/orbitron.svg";
 
 const togleProduct = ref(false);
 
@@ -665,14 +666,15 @@ function toggleProduct() {
   togleProduct.value = !togleProduct.value;
 }
 
-const images = [
-  "/img/product/1.webp",
-  "/img/product/2.webp",
-  "/img/product/3.webp",
-  "/img/product/4.webp",
-];
+const productModules = import.meta.glob(
+  "@/assets/img/product/*.{webp,png,jpg,jpeg}",
+  {
+    eager: true,
+    import: "default",
+  },
+);
 
-const orbitron = "/img/orbitron.svg";
+const images = Object.values(productModules);
 
 const currentIndex = ref(0);
 
